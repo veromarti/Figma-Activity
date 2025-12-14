@@ -1,10 +1,26 @@
 body{
     margin: 0;
 }
-.lilita-font {
+
+main{
+    height: 100vh;
+}
+
+.lilita-font{
     font-family: "Lilita One", sans-serif;
     font-weight: 400;
     font-style: normal;
+}
+
+.ubuntu-font{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.satoshi-font{
+    font-family: "Satoshi Medium";
+    font-weight: 500;
 }
 
 .sign-up{
@@ -20,15 +36,10 @@ body{
 }
 
 .sign-up p{
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 400;
-    font-style: normal;
     margin: 0;
 }
 
 .sign-up a{
-    font-family: "Satoshi Medium";
-    font-weight: 500;
     color: white;
 }
 
@@ -51,7 +62,6 @@ body{
 
 .my-header .burger-menu{
     display: none;
-
 }
 
 .my-header .burger-menu span{
@@ -69,15 +79,27 @@ body{
 .my-nav ul{
     font-size: 16px;
     list-style-type:none;
-    text-decoration: none;
     display: flex;
     flex-direction: row;
     gap: 24px;
 }
 
+.my-nav ul li{
+    display: flex;
+    align-items: center;
+}
+
+.my-nav ul a{
+    text-decoration: none;
+    color: #000;
+    white-space: nowrap;
+}
+
+
 .search-bar{
     position: relative;
     width: 598px;
+    margin-left: 20px;
 }
 
 .search-bar span{
@@ -89,6 +111,7 @@ body{
 }
 
 .input-search{
+    font-size: 16px;
     width: 496px;
     height: 48px;
     border-style: none;
@@ -127,27 +150,18 @@ body{
 }
 
 .graphic-header h1{
-    font-family: "Lilita One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
     font-size: 64px;
     padding-top: 18px;
     margin-bottom: 0;
 }
 
-.graphic-header p{
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+.graphic-header text p{
     font-size: 16px;
     opacity: 0.6;
 }
 
 .graphic-header .paragraph{
     width: 545px;
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 400;
-    font-style: normal;
     font-size: 16px;
     opacity: 0.6;
 }
@@ -156,8 +170,6 @@ body{
     border-style: none ;
     width:210px;
     height: 52px;
-    font-family: "Satoshi Medium";
-    font-weight: 500;
     color: white;
     font-size: 16px;
     border-radius: 62px;
@@ -176,6 +188,11 @@ body{
     display: flex;
     margin-top: 48px;
     gap: 32px;
+}
+
+.numbers p{
+    font-size: 16px;
+    opacity: 0.6;
 }
 
 .graphic-header .couple-img{
@@ -211,6 +228,93 @@ body{
     gap:106px;
     justify-content: center;
     align-items: center;
+}
+
+.products{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.products h1{
+    font-size: 48px;
+    margin: 70px;
+}
+
+.products .clothes-cards{
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+}
+
+.products .card{
+    width:295px;
+    height: 298px;
+    background-color: #F0EEED;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding:10px
+}
+
+.card .product-img{
+    display: flex;
+    margin-top: -73px
+
+}
+
+.stars{
+    display: flex;
+    flex-direction: row;
+    height: 17px;
+    gap:7px;
+    align-items: center;
+}
+
+.stars span{
+    box-sizing: border-box;
+    height: 17px;
+}
+
+.stars p{
+    font-size: 14px;
+    margin: 0 10px;
+}
+
+.product-info h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.product-info h3{
+    font-size: 24px;
+    margin-top:10px;
+}
+
+.product-info h3 span{
+    margin-left: 10px;
+}
+
+.button-view{
+    font-size: 16px;
+    width: 218px;
+    height: 52px;
+    border-color: rgba(0,0,0,0.1);
+    border-radius: 62px;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+.button-view p{
+    margin: 0;
+}
+
+.separator{
+    margin-left: 100px;
 }
 
 @media (max-width:768px){
@@ -288,12 +392,12 @@ body{
     }
 
     .graphic-header p{
-        margin-top: 0px;
+        margin: 0px;
     }
 
     .text button{
         width:358px;
-        margin-top: 10px;
+        margin-top: 20px;
         box-sizing: border-box;
         padding: auto;
     }
@@ -368,12 +472,10 @@ body{
 
     .brands span:nth-child(4){
         min-width: 150px;
-
     }
     .brands span:nth-child(5){
         min-width: 160px;
     }
-
 
     .brands img{
         scale: 0.7;
