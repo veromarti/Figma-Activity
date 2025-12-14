@@ -109,13 +109,99 @@ body{
 .my-header article{
     display: flex;
     margin-left: 40px;
-    gap:14px
+    gap:14px;
 }
 
 .my-header article .search{
     display: none;
 }
 
+.graphic-header{
+    height: 663px;
+    display: flex;
+    flex-direction: row;
+    background-color: #f2f0f1;
+    justify-content: space-around;
+    overflow-y: hidden;
+}
+
+.graphic-header h1{
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 64px;
+    padding-top: 18px;
+    margin-bottom: 0;
+}
+
+.graphic-header p{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    opacity: 0.6;
+    
+}
+
+.text button{
+    width:210px;
+    height: 52px;
+    font-family: "Satoshi Medium";
+    font-weight: 500;
+    color: white;
+    font-size: 16px;
+    border-radius: 62px;
+    background-color: #000;
+    margin-top: 20px;
+}
+
+.text span{
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+}
+
+.numbers{
+    display: flex;
+    margin-top: 48px;
+    gap: 32px;
+}
+
+.graphic-header .couple-img{
+    scale:2.4;
+    margin-top: 270px;
+    margin-right: 150px;
+}
+
+.graphic-header .small-deco{
+    top: 431px;
+    left:730px;
+    position: absolute;
+    z-index: 3;
+}
+
+.small-deco img{
+    width: 56px;
+}
+
+.graphic-header .deco{
+    top: 220px;
+    left:1255px;
+    position: absolute;
+    z-index: 3;
+}
+
+.brands{
+    background-color: #000;
+    height: 122px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap:106px;
+    justify-content: center;
+    align-items: center;
+}
 
 @media (max-width:768px){
 
