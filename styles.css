@@ -263,7 +263,6 @@ main{
 .card .product-img{
     display: flex;
     margin-top: -73px
-
 }
 
 .stars{
@@ -316,6 +315,101 @@ main{
 .separator{
     margin-left: 100px;
 }
+
+.browse-style{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F0F0F0;
+    border-radius: 40px;
+    max-width:1239px;
+    height: 866px;
+    justify-self: center;
+    padding: 0 80px 0px 80px;
+}
+
+.browse-style h2{
+    margin-top: 0;
+    font-size: 48px;
+}
+
+.dress-style{
+    display: grid;
+    grid-template-columns: 407px 1fr 407px;
+    position: relative;
+    gap: 20px;
+    
+}
+
+.dress-style .style{
+    height: 289px;
+    overflow: hidden;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.dress-style .style h3{
+    position: absolute;
+    font-size: 36px;
+    margin: 20px;
+    z-index: 1;
+}
+
+.dress-style div:first-child{
+    grid-column-start:1;
+}
+
+.dress-style div:nth-child(2){
+    grid-column-start: span 2;
+    width: 684px;
+}
+
+.dress-style div:nth-child(3){
+    grid-column-start: span 2;
+    width: 684px;
+}
+
+.style img{
+    position: relative;
+}
+
+.dress-style .style:first-child img{
+    transform: rotateY(180deg);
+    top: -53px;
+    left: -348px;
+    scale: 1.5;
+}
+
+.dress-style .style:nth-child(2) img{
+    top: -1px;
+    left: 202px;
+    scale: 1.5;    
+}
+
+.dress-style .style:nth-child(3) img{
+    top: -174px;
+    left: -5px;
+}
+
+.dress-style .style:last-child img{
+    top: -367px;
+    left: -89px;
+    scale: 0.6;  
+}
+
+.happy-customers{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.happy-customers h1{
+    font-size: 48px;
+}
+
+.happy-customers .opinions{}
 
 @media (max-width:768px){
 
