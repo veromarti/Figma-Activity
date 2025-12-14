@@ -17,7 +17,6 @@ body{
     text-align: center;
     font-size: 14px;
     align-content: center;
-
 }
 
 .sign-up p{
@@ -45,7 +44,7 @@ body{
 
 .my-header{
     width:100%;
-    height: 88px;
+    height: 96px;
     display: flex;
     align-items: center;
 }
@@ -110,6 +109,7 @@ body{
     display: flex;
     margin-left: 40px;
     gap:14px;
+    width: 100%;
 }
 
 .my-header article .search{
@@ -118,6 +118,7 @@ body{
 
 .graphic-header{
     height: 663px;
+    width: 100%;
     display: flex;
     flex-direction: row;
     background-color: #f2f0f1;
@@ -140,10 +141,19 @@ body{
     font-style: normal;
     font-size: 16px;
     opacity: 0.6;
-    
+}
+
+.graphic-header .paragraph{
+    width: 545px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    opacity: 0.6;
 }
 
 .text button{
+    border-style: none ;
     width:210px;
     height: 52px;
     font-family: "Satoshi Medium";
@@ -205,28 +215,33 @@ body{
 
 @media (max-width:768px){
 
+    .sign-up{
+        height: 34px;
+        font-size: 12px;
+    }
+
     .home-title{
-    font-family: "Lilita One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 25.2px;
-    margin-left: 0;
+        font-family: "Lilita One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 25.2px;
+        margin-left: 20px;
     }
 
     .my-header .burger-menu{
-    width: 36px;
-    height: 60px;
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-    justify-content: center;
+        width: 36px;
+        height: 60px;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        justify-content: center;
     }
 
     .my-header{
-        width:100%;
         padding-left: 20px;
-        height: 88px;
+        height: 64px;
         display: flex;
+        width:80%;
         align-items: center;
     }
 
@@ -234,12 +249,136 @@ body{
         display: none;
     }
 
-
     .search-bar{
         display: none;
     }
 
     .my-header article .search{
         display: block;
+        margin-left: 40px;
     }
+
+    .graphic-header{
+        width: 390px;
+        padding: 16px;
+        flex-direction: column;
+        height: 853px;
+        position: relative;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+
+    .graphic-header .text{
+        z-index: 2;
+    }
+
+    .graphic-header h1{
+        font-size: 36px;
+        margin-top: 0;
+        padding-top: 16px;
+        margin-bottom: 5px;
+        line-height: 34px;
+    }
+
+    .graphic-header .paragraph{
+        width: 358px;
+        line-height: 20px;
+        font-size: 14px;
+        margin-top: 12px;
+    }
+
+    .graphic-header p{
+        margin-top: 0px;
+    }
+
+    .text button{
+        width:358px;
+        margin-top: 10px;
+        box-sizing: border-box;
+        padding: auto;
+    }
+
+    .text span{
+        font-size: 24px;
+    }
+
+    .numbers{
+        display: flex;
+        flex-wrap: wrap;
+        column-gap:20px;
+        row-gap: 5px;
+        justify-content: center;
+        margin-top: 25px;
+    }
+
+    .numbers p{
+        font-size: 12px;
+    }
+
+    .numbers .line1 img{
+        height: 52px;
+    }
+
+    .numbers .line2{
+        display: none;
+    }
+
+    .graphic-header .couple-img{
+        margin-top: 35px;
+        margin-right: 0px;
+        scale:1.3;
+    }  
+    
+    .couple-img{
+        max-width: 390px;
+    }
+
+    .graphic-header .small-deco{
+        top: 535px;
+        left:24px;
+        scale: 0.7858;
+        z-index: 3;
+    }
+
+    .graphic-header .deco{
+        top: 431px;
+        left: 281px;
+        scale: 0.7308;
+        z-index: 3;
+    }
+
+    .brands{
+        height: 146px;
+        flex-wrap: wrap;
+        gap:10px;
+        row-gap: 1px;
+        justify-content: center;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .brands span{
+        display: flex;
+        max-width: 33%;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        padding: 1px;
+    }
+
+    .brands span:nth-child(4){
+        min-width: 150px;
+
+    }
+    .brands span:nth-child(5){
+        min-width: 160px;
+    }
+
+
+    .brands img{
+        scale: 0.7;
+        
+    }
+
+
 }
