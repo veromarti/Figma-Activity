@@ -1,8 +1,5 @@
 body{
     margin: 0;
-}
-
-main{
     height: 100vh;
 }
 
@@ -94,7 +91,6 @@ main{
     color: #000;
     white-space: nowrap;
 }
-
 
 .search-bar{
     position: relative;
@@ -402,14 +398,115 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: start;
+    position: relative;
+    overflow-x: hidden;
 }
 
 .happy-customers h1{
     font-size: 48px;
+    margin-left: 100px;
+    display: flex;
+    width:1259px;
+    justify-content: space-between;
 }
 
-.happy-customers .opinions{}
+.happy-customers section{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 1440px;
+}
+
+.happy-customers section .opinion{
+    box-sizing: border-box;
+    height: 240px;
+    width: 400px;
+    border: solid 1px;
+    border-color: rgba(0,0,0,0.1);
+    border-radius: 20px;
+    padding:28px 32px;
+}
+
+.happy-customers section .opinion:first-child{
+    position: absolute;
+    left: -320px;
+    filter:blur(1.5px)
+}
+
+.happy-customers section .opinion:nth-child(2){
+    margin-left: 100px;
+}
+
+.happy-customers section .opinion:last-child{
+    position: absolute;
+    left: 1360px;
+    filter:blur(1.5px)
+}
+
+.comment h3{
+    font-size: 20px;
+}
+
+.comment p{
+    font-size: 16px; 
+}
+
+
+
+
+
+footer{
+    height: 499px;
+    background-color:#F0F0F0 ;
+    display: flex;
+    padding-top: 140px;
+    justify-content: space-between
+}
+
+footer .store{
+    display: flex;
+    flex-direction: column;
+    width: 248px;
+    margin-left: 100px;
+    
+}
+
+.store h2{
+    font-size: 33.45px;
+    margin: 0;
+}
+
+footer .store p{
+    font-size: 14px;
+}
+
+footer .details{
+    display: flex;
+    flex-direction: column;
+    gap:26px;
+    color: rgba(0,0,0,0.6);
+}
+
+footer .details:last-child{
+    margin-right: 100px;
+}
+
+footer .details ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+footer .details li{
+    text-decoration: none;
+    font-size: 16px;
+    padding-bottom: 26px;
+    
+}
+
+.details h3{
+    margin: 0;
+}
 
 @media (max-width:768px){
 
