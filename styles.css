@@ -1,6 +1,11 @@
+html{
+    width: 100%;
+}
+
 body{
     margin: 0;
     height: 100vh;
+    width: 100%;
 }
 
 .lilita-font{
@@ -136,13 +141,15 @@ body{
 }
 
 .graphic-header{
-    height: 663px;
     width: 100%;
+    height: 663px;
     display: flex;
     flex-direction: row;
     background-color: #f2f0f1;
-    justify-content: space-around;
-    overflow-y: hidden;
+    justify-content: space-between;
+    overflow: hidden;
+    padding: 0 100px;
+    box-sizing: border-box;
 }
 
 .graphic-header h1{
@@ -287,10 +294,27 @@ body{
 .product-info h3{
     font-size: 24px;
     margin-top:10px;
+    display: flex;
 }
 
 .product-info h3 span{
     margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-info .discount{
+    font-size: 12px;
+    width: 58px;
+    height: 28px;
+    background-color: rgba(255, 51, 51,0.1);
+    color: #FF3333;
+    border-radius: 62px;
+}
+
+.discount p{
+    margin: 0;
 }
 
 .button-view{
@@ -309,7 +333,7 @@ body{
 }
 
 .separator{
-    margin-left: 100px;
+    width: 1240px;
 }
 
 .browse-style{
@@ -408,6 +432,7 @@ body{
     margin-left: 100px;
     display: flex;
     width:1259px;
+    margin-top: 60px;
     justify-content: space-between;
 }
 
@@ -452,16 +477,81 @@ body{
     font-size: 16px; 
 }
 
+.banner{
+    height: 180px;
+    width: 1240px;
+    background-color: #000;
+    border-radius: 20px;
+    justify-self: center;
+    padding: 36px 64px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+    position: relative;
+    top:90px;
+}
 
+.banner h2{
+    font-size: 40px;
+    color: #FFFF;
+    width: 551px;
+    margin: 0;
+}
 
+.suscription{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:12px;
+}
 
+.suscription span{
+    position: absolute;
+    display: block;
+    bottom: 4.4rem;
+    left: 1.2rem;
+}
+
+.email{
+    font-size: 16px;
+    width: 349px;
+    height: 46px;
+    border-style: none;
+    outline: none;
+    background-color: #F0F0F0;
+    border-radius: 62px;
+    padding-left: 3.2rem;
+    color: rgba(0,0,0,0.4);
+    box-sizing: border-box;
+}
+
+.email input{
+    padding-left: 3rem;
+    margin-left: 50px;
+}
+
+.subscribe{
+    width:349px;
+    border-radius:62px;
+    border-style: none;
+}
 
 footer{
     height: 499px;
     background-color:#F0F0F0 ;
     display: flex;
+    flex-direction: column;
     padding-top: 140px;
-    justify-content: space-between
+    box-sizing: border-box;
+}
+
+footer .my-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 footer .store{
@@ -469,7 +559,7 @@ footer .store{
     flex-direction: column;
     width: 248px;
     margin-left: 100px;
-    
+    gap: 35px;
 }
 
 .store h2{
@@ -479,6 +569,30 @@ footer .store{
 
 footer .store p{
     font-size: 14px;
+    color: rgba(0,0,0,0.6);
+    margin: 0;
+}
+
+.store .social{
+    display: flex;
+    flex-direction: row;
+    width: 148px;
+    justify-content: space-between;
+}
+
+.social button{
+    width: 28px;
+    height: 28px;
+    border-style:none;
+    background-color: #FFFF;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social button:nth-child(2){
+    background-color: #000;
 }
 
 footer .details{
@@ -506,6 +620,43 @@ footer .details li{
 
 .details h3{
     margin: 0;
+}
+
+footer .separator{
+    margin-left: 100px;
+}
+
+footer .final{
+    margin-left: 100px;
+    font-size: 14px;
+    color: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: space-between;
+    width: 1240px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.final .payment{
+    display: flex;
+    flex-direction: row;
+    gap:12px;
+}
+
+.payment span{
+    display: flex;
+    width: 46.61px;
+    height: 30.03px;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFF;
+    border-radius: 5.38px;
+    border: 0.22px;
+    border-color: #D6DCE5;
+}
+
+.payment span img:first-child{
+    width:30px;
 }
 
 @media (max-width:768px){
