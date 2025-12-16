@@ -1,0 +1,486 @@
+html{
+    width: 100%;
+}
+
+body{
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+}
+
+.lilita-font{
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.ubuntu-font{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.satoshi-font{
+    font-family: "Satoshi Medium";
+    font-weight: 500;
+}
+
+.sign-up{
+    width:100%;
+    height: 38px;
+    margin-top: 0;
+    box-sizing: border-box;
+    color: white;
+    background-color: black;
+    text-align: center;
+    font-size: 14px;
+    align-content: center;
+    position: relative;
+}
+
+.sign-up p{
+    margin: 0;
+}
+
+.sign-up a{
+    color: white;
+}
+
+.sign-up p span{
+    position: absolute;
+    top:13px;
+    right: 100px;
+}
+
+.home-title{
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 33.45px;
+    text-decoration: none;
+    color: black;
+    margin-left: 100px;
+}
+
+.my-header{
+    width:100%;
+    height: 96px;
+    display: flex;
+    align-items: center;
+}
+
+.my-header .burger-menu{
+    display: none;
+}
+
+.my-header .burger-menu span{
+    width: 18.75px;
+    height: 2px;
+    background-color: #000;
+}
+
+.my-nav{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.my-nav ul{
+    font-size: 16px;
+    list-style-type:none;
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.my-nav ul li{
+    display: flex;
+    align-items: center;
+}
+
+.my-nav ul a{
+    text-decoration: none;
+    color: #000;
+    white-space: nowrap;
+}
+
+.search-bar{
+    position: relative;
+    width: 598px;
+    margin-left: 20px;
+}
+
+.search-bar span{
+    position: absolute;
+    display: block;
+    bottom: .6rem;
+    left: 4.2rem;
+    opacity: 0.4;
+}
+
+.input-search{
+    font-size: 16px;
+    width: 496px;
+    height: 48px;
+    border-style: none;
+    outline: none;
+    background-color: #F0F0F0;
+    border-radius: 62px;
+    padding-left: 3.2rem;
+    margin-left: 50px;
+    color: rgba(0,0,0,0.4);
+}
+
+.input-search input{
+    padding-left: 3rem;
+    margin-left: 50px;
+}
+
+.my-header article{
+    display: flex;
+    margin-left: 40px;
+    gap:14px;
+    width: 100%;
+    margin-right: 100px;
+    justify-content: flex-end;
+}
+
+.my-header article .search{
+    display: none;
+}
+
+.separator{
+    width: 1240px;
+}
+
+
+
+
+
+.banner{
+    height: 180px;
+    width: 1240px;
+    background-color: #000;
+    border-radius: 20px;
+    justify-self: center;
+    padding: 36px 64px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+    position: relative;
+    top:90px;
+}
+
+.banner h2{
+    font-size: 40px;
+    color: #FFFF;
+    width: 551px;
+    margin: 0;
+}
+
+.suscription{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:12px;
+}
+
+.suscription span{
+    position: absolute;
+    display: block;
+    bottom: 4.4rem;
+    left: 1.2rem;
+}
+
+.email{
+    font-size: 16px;
+    width: 349px;
+    height: 46px;
+    border-style: none;
+    outline: none;
+    background-color: #F0F0F0;
+    border-radius: 62px;
+    padding-left: 3.2rem;
+    color: rgba(0,0,0,0.4);
+    box-sizing: border-box;
+}
+
+.subscribe{
+    height: 46px;
+    width:349px;
+    border-radius:62px;
+    border-style: none;
+}
+
+footer{
+    height: 499px;
+    background-color:#F0F0F0 ;
+    display: flex;
+    flex-direction: column;
+    padding-top: 140px;
+    box-sizing: border-box;
+}
+
+footer .my-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+footer .store{
+    display: flex;
+    flex-direction: column;
+    width: 248px;
+    margin-left: 100px;
+    gap: 35px;
+}
+
+.store h2{
+    font-size: 33.45px;
+    margin: 0;
+}
+
+footer .store p{
+    font-size: 14px;
+    color: rgba(0,0,0,0.6);
+    margin: 0;
+}
+
+.store .social{
+    display: flex;
+    flex-direction: row;
+    width: 148px;
+    justify-content: space-between;
+}
+
+.social button{
+    width: 28px;
+    height: 28px;
+    border-style:none;
+    background-color: #FFFF;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social button:nth-child(2){
+    background-color: #000;
+}
+
+footer .details{
+    display: flex;
+    flex-direction: column;
+    gap:26px;
+}
+
+footer .details:last-child{
+    margin-right: 100px;
+}
+
+footer .details ul{
+    list-style: none;
+    padding-left: 0;
+    color: rgba(0,0,0,0.6);
+}
+
+footer .details li{
+    text-decoration: none;
+    font-size: 16px;
+    padding-bottom: 26px;
+    
+}
+
+.details h3{
+    margin: 0;
+    color: rgba(0,0,0);
+}
+
+footer .separator{
+    margin-left: 100px;
+}
+
+footer .final{
+    margin-left: 100px;
+    font-size: 14px;
+    color: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: space-between;
+    width: 1240px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.final .payment{
+    display: flex;
+    flex-direction: row;
+    gap:12px;
+}
+
+.payment span{
+    display: flex;
+    width: 46.61px;
+    height: 30.03px;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFF;
+    border-radius: 5.38px;
+    border: 0.22px;
+    border-color: #D6DCE5;
+}
+
+.payment span img:first-child{
+    width:30px;
+}
+
+@media (max-width:768px){
+
+    .sign-up{
+        height: 34px;
+        font-size: 12px;
+    }
+
+    .sign-up p span{
+        display: none;
+    }
+
+    .home-title{
+        font-family: "Lilita One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 25.2px;
+        margin-left: 20px;
+    }
+
+    .my-header .burger-menu{
+        width: 36px;
+        height: 60px;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        justify-content: center;
+    }
+
+    .my-header{
+        padding-left: 20px;
+        height: 64px;
+        display: flex;
+        width:80%;
+        align-items: center;
+    }
+
+    .my-nav{
+        display: none;
+    }
+
+    .search-bar{
+        display: none;
+    }
+
+    .my-header article .search{
+        display: block;
+        margin-left: 40px;
+    }
+
+
+
+
+
+
+
+    .banner{
+        height: 293px;
+        width: 358px;
+        justify-self: center;
+        padding: 32px 24px;
+        flex-direction: column;
+        top:146px;
+        margin: 0 16px;
+    }
+
+    .banner h2{
+        font-size: 32px;
+        width: 297px;
+    }
+
+    .suscription span{
+        bottom: 4.0rem;
+    }
+
+    .email{
+        font-size: 14px;
+        width: 311px;
+        height: 42px;
+    }
+
+    .subscribe{
+        height:42px;
+        width:311px;
+    }
+
+    footer{
+        width: 100%;
+        height: 886px;
+        padding: 166px 16px 16px 16px;
+    }
+
+    footer .my-footer{
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap:20px;
+    }
+
+    footer .store{
+        width: 357px;
+        margin-left: 0;
+        gap: 10px;
+    }
+
+    .store h2{
+        font-size: 28.85px;
+    }
+
+    footer .details{
+        gap:16px;
+        font-size: 14px;
+    }
+
+    footer .details:last-child{
+        margin-right: 0px;
+    }
+
+    footer .details li{
+        padding-bottom: 16px;
+    }
+
+    footer .separator{
+        margin-left: 0px;
+    }
+
+    footer .final{
+        margin-left: 0px;
+        flex-direction: column;
+        width:358px;
+        gap:10px;
+    }
+
+    .final .payment{
+        gap:10.29px;
+        margin-bottom: 40px;
+    }
+
+    .payment span{
+        width: 39.96px;
+        height: 25.74px;
+        border-radius: 4.61px;
+        border: 0.19px;
+    }
+
+    .payment span img:first-child{
+        width:26px;
+    }
+
+}
