@@ -176,6 +176,10 @@ main .separator{
     
 }
 
+.sub-menu .ubuntu-font{
+    color: rgba(0,0,0,0.6);
+}
+
 .product-visual{
     width:100%;
     display: grid;

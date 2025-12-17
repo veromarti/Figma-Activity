@@ -8,6 +8,10 @@ body{
     width: 100%;
 }
 
+h2,h3{
+    margin:0;
+}
+
 .lilita-font{
     font-family: "Lilita One", sans-serif;
     font-weight: 400;
@@ -149,8 +153,148 @@ body{
     display: none;
 }
 
-.separator{
-    width: 1240px;
+main{
+    padding: 0 100px;
+}
+
+.sub-menu{
+    width:100%;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    box-sizing: border-box;
+}
+
+.sub-menu span{
+    display: flex;
+    width: 11.5px;
+    margin: 1px;
+}
+
+.sub-menu span img{
+    width: 100%;
+    height: 11.5px;
+    display: flex;
+    align-items: end;
+    
+}
+
+.sub-menu .ubuntu-font{
+    color: rgba(0,0,0,0.6);
+}
+
+.cat-main{
+    display: flex;
+    width: 100%;
+
+}
+
+.cat-main .filters{
+    width:25%;
+    padding: 20px 24px;
+    border: solid rgba(0,0,0,0.1);
+    border-radius: 20px;
+
+}
+
+.filters header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+}
+
+.filters header span{
+    opacity: 0.4;
+}
+
+.cat-main .separator{
+    width:100%;
+    height: 2px;
+}
+
+.cat-main .filter-option ul{
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+.filter-option ul li{
+    color: rgba(0,0,0,0.6);
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cat-main .current-filter{
+    font-size: 20px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.current-filter .lilita-font{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.colors .lilita-font{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.colors-options{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 31px;
+    row-gap: 16px;
+}
+
+.colors .colors-options{
+    width: 100%;
+}
+
+.colors .colors-options span{
+    display:inline-block;
+    width:37px;
+    height:37px;
+    border-radius: 50%;
+    border: solid 2px rgba(0,0,0,0.2);
+    box-sizing: border-box;
+}
+
+.size{
+    width: 100%;
+}
+
+.size .size-options{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    /* flex-wrap: wrap; */
+    gap: 8px;
+}
+
+.size .size-options span{
+    font-size: 14px;
+    height: 36px;
+    color: rgba(0,0,0,0.6);
+    padding:10px 20px;
+    border-radius: 62px;
+    background-color: #F0F0F0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;;
 }
 
 
@@ -176,7 +320,6 @@ body{
     font-size: 40px;
     color: #FFFF;
     width: 551px;
-    margin: 0;
 }
 
 .suscription{
@@ -240,7 +383,6 @@ footer .store{
 
 .store h2{
     font-size: 33.45px;
-    margin: 0;
 }
 
 footer .store p{
@@ -295,7 +437,6 @@ footer .details li{
 }
 
 .details h3{
-    margin: 0;
     color: rgba(0,0,0);
 }
 
