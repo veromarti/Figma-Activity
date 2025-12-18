@@ -274,9 +274,15 @@ body{
     padding:10px
 }
 
+.card a{
+    width: 275px;
+    height: auto;
+}
+
 .card .product-img{
     display: flex;
-    margin-top: -73px
+    margin-top: -73px;
+    width: 275px;
 }
 
 .stars{
@@ -364,7 +370,6 @@ body{
     margin-top: 0;
     font-size: 48px;
 }
-
 
 .dress-style{
     display: grid;
