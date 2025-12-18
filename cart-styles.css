@@ -372,6 +372,17 @@ main{
     align-items: center;
 }
 
+.order-summary .checkout p{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+.order-summary .checkout p span{
+    display: flex;
+    align-items: center;
+}
 
 
 
