@@ -359,17 +359,15 @@ main{
     padding:10px
 }
 
-.card .product-img{
-    display: flex;
-    margin-top: -73px
+.card a{
+    width: 275px;
+    height: auto;
 }
 
-.stars{
+.card .product-img{
     display: flex;
-    flex-direction: row;
-    height: 17px;
-    gap:7px;
-    align-items: center;
+    margin-top: -73px;
+    width: 275px;
 }
 
 .stars span{

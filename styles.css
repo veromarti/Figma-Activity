@@ -545,11 +545,6 @@ body{
     box-sizing: border-box;
 }
 
-/* .email input{
-    padding-left: 3rem;
-    margin-left: 50px;
-} */
-
 .subscribe{
     height: 46px;
     width:349px;
@@ -868,6 +863,17 @@ footer .final{
         height: 200px;
         border-radius: 13.42px;
         padding: 25px 0 0 0;
+    }
+
+    .card a{
+        width: 198px;
+        height: auto;
+    }
+
+    .card .product-img{
+        display: flex;
+        margin-top: -73px;
+        width: 198px;
     }
 
     .product-info h4{
